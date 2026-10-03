@@ -1,5 +1,7 @@
 # 齐正涵 · 个人网站与作品集
 
+网站：[qizhenghan-portfolio.vercel.app](https://qizhenghan-portfolio.vercel.app) · [设计与实现验收](docs/design/VERIFICATION.md)
+
 科技感、智能硬件与 AI Native 风格的个人网站。访客可以了解齐正涵的职业方向、产品方法和三个代表项目：AI 眼镜智能助手、广宣审核 Agent、AI 慧批。
 
 ## 本地运行
