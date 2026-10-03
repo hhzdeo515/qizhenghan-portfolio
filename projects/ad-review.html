@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0f12"><meta name="description" content="齐正涵的广宣审核 Agent：宣传物料解析、AI 初审、人工确认，以及可追溯的整改与复审流程。">
+  <title>广宣审核 Agent · 项目案例</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/vendor/lucide.js" defer></script><script src="../assets/site.js" defer></script>
+</head>
+<body data-page="ad-review">
+  <main class="project-detail container section-pad">
+    <div class="section-topline"><p class="eyebrow">03 / CASE STUDY · AGENT</p><a class="text-link" href="../index.html#work" data-navigate="home" data-anchor="work">返回作品<i data-lucide="arrow-up-left" aria-hidden="true"></i></a></div>
+    <div class="detail-grid">
+      <div>
+        <div class="flex flex-wrap gap-2 mb-6"><span class="tag">审核助手</span><span class="tag">证据检索</span><span class="tag">人工决策</span></div>
+        <h1 class="section-heading">广宣审核 Agent</h1>
+        <p class="detail-subtitle">风险有依据，<br>整改有来处。</p>
+        <p class="body-copy mt-6">串联宣传物料接收、AI 初审和风险整改。AI 提供线索与建议，法务保留判断、签名和最终批准，让每次修改都可追溯。</p>
+        <div class="detail-meta mt-8"><span class="mono muted">PRODUCT FOCUS</span><span>物料解析 / 风险确认 / 整改与复审</span></div>
+        <a class="text-link mt-6" href="https://github.com/hhzdeo515/-Agent" target="_blank" rel="noopener noreferrer">查看 GitHub<i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+      </div>
+      <figure class="detail-visual">
+        <div class="window-chrome"><span></span><span></span><span></span><p class="mono">广宣审核 / 反馈区</p></div>
+        <img src="../assets/images/ad-review-feedback.png" width="1680" height="1080" alt="广宣审核反馈区的测试任务，展示物料初审分类、风险清单和人工处理状态" fetchpriority="high">
+        <figcaption>历史产品界面 · 测试任务与示例数据；图中比例不代表模型准确率</figcaption>
+      </figure>
+    </div>
+    <div class="feature-list">
+      <article class="feature-row"><span class="mono muted">01</span><h2>统一接收审核材料</h2><p>上传图片、视频或文档，确认本次审核关注点。解析结果保留位置锚点，失败材料有明确的补充入口。</p><i data-lucide="files" aria-hidden="true"></i></article>
+      <article class="feature-row"><span class="mono muted">02</span><h2>发现风险，交给人判断</h2><p>按初审通过、待人工判断和风险未通过整理材料，独立记录每个问题，由法务确认、标记误判或转入整改。</p><i data-lucide="scan-search" aria-hidden="true"></i></article>
+      <article class="feature-row"><span class="mono muted">03</span><h2>从新版本追溯修改</h2><p>跟踪文字差异和 AI 复审，保留人工处理记录。风险关闭和最终批准受法务权限与签名约束。</p><i data-lucide="git-compare-arrows" aria-hidden="true"></i></article>
+    </div>
+    <details class="technical-details">
+      <summary>技术与责任分工<span class="mono">DETAILS +</span></summary>
+      <div><p>Vue / Java。业务模型串联任务、物料、版本、风险和审核记录，状态机、权限与签名规则约束关键操作。</p><p>模型适配支持规则模拟和千问服务；千问链路包含 OCR、ASR、向量检索与重排。初审报告数量由服务端汇总，异步任务展示实际进度。</p></div>
+    </details>
+    <details class="technical-details">
+      <summary>当前能力边界<span class="mono">DETAILS +</span></summary>
+      <div><p>AI 初审通过不等于法务最终批准。正式宣传物料仍须由有权限的法务人员确认，本页展示不构成法律意见。</p><p>图像 OCR 无可靠坐标时仅提示大致区域。版本差异支持文字，图片与视频差异不支持；生产认证与生产级文件中转仍需完善，当前仅供本地联调和验证。</p><p>截图中的任务和历史演示角色均为测试示例，物料通过率不代表模型准确率、真实审核效果或节省工时。</p></div>
+    </details>
+  </main>
+</body>
+</html>

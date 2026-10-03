@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0f12"><meta name="description" content="齐正涵的 AI 眼镜智能助手：会议纪要、拍照解题，以及眼镜与戒指协同交互原型。">
+  <title>AI 眼镜智能助手 · 项目案例</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/vendor/lucide.js" defer></script><script src="../assets/site.js" defer></script>
+</head>
+<body data-page="ai-glasses">
+  <main class="project-detail container section-pad">
+    <div class="section-topline"><p class="eyebrow">02 / CASE STUDY · HARDWARE</p><a class="text-link" href="../index.html#work" data-navigate="home" data-anchor="work">返回作品<i data-lucide="arrow-up-left" aria-hidden="true"></i></a></div>
+    <div class="detail-grid">
+      <div>
+        <div class="flex flex-wrap gap-2 mb-6"><span class="tag">多模态 Agent</span><span class="tag">AI 硬件交互</span><span class="tag">可运行原型</span></div>
+        <h1 class="section-heading">AI 眼镜智能助手</h1>
+        <p class="detail-subtitle">让多模态能力，<br>进入镜片视野。</p>
+        <p class="body-copy mt-6">把会议纪要和拍照解题放进镜片，用戒指、键盘或触控完成选择与确认。为小屏与有限操作，设计清楚的输入、处理和反馈。</p>
+        <div class="detail-meta mt-8"><span class="mono muted">PRODUCT FOCUS</span><span>会议纪要 / 拍照解题 / 眼镜与戒指协同</span></div>
+        <a class="text-link mt-6" href="https://github.com/hhzdeo515/AI-" target="_blank" rel="noopener noreferrer">查看 GitHub<i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+      </div>
+      <figure class="detail-visual">
+        <div class="window-chrome"><span></span><span></span><span></span><p class="mono">AI 眼镜 / 硬件协同</p></div>
+        <img src="../assets/images/ai-glasses.png" width="1523" height="952" alt="AI 眼镜助手的镜片视野与虚拟戒指界面，可选择拍照解题或会议纪要" fetchpriority="high">
+        <figcaption>真实产品原型界面 · 眼镜、戒指及设备连接为浏览器模拟</figcaption>
+      </figure>
+    </div>
+    <div class="feature-list">
+      <article class="feature-row"><span class="mono muted">01</span><h2>拍下问题，逐题处理</h2><p>识别单题、多题与共用材料，连接资料检索、计算工具和原图复核，保留证据不足时的补拍与退出路径。</p><i data-lucide="scan-line" aria-hidden="true"></i></article>
+      <article class="feature-row"><span class="mono muted">02</span><h2>听见内容，核对纪要</h2><p>录音或导入音频，经转写、纪要生成与原文核验后归档；异步任务保留进度和检查点。</p><i data-lucide="audio-lines" aria-hidden="true"></i></article>
+      <article class="feature-row"><span class="mono muted">03</span><h2>有限输入，清楚操作</h2><p>在镜片内选择场景和阅读结果，用虚拟戒指滑动、确认与返回，提前检验硬件形态带来的操作限制。</p><i data-lucide="glasses" aria-hidden="true"></i></article>
+    </div>
+    <details class="technical-details">
+      <summary>技术与工作流<span class="mono">DETAILS +</span></summary>
+      <div><p>Next.js / React / Flask / LangGraph。多模态处理、资料检索与工具调用组成场景工作流，任务支持持久化和检查点恢复。</p><p>支持原版与 JEV 决策流程切换，参考资料与题解、会议记录可保留历史；写作和面试入口可处理用户草稿及实际回答。</p></div>
+    </details>
+    <details class="technical-details">
+      <summary>当前能力边界<span class="mono">DETAILS +</span></summary>
+      <div><p>眼镜、戒指及传输链路为浏览器模拟，真实设备接入尚未实现。摄像头、麦克风使用当前设备，模型请求需配置服务凭据。</p><p>解题与会议结果仍需用户核验。开发集复测和模拟回归不能证明任意新题准确率或设备验收结果；当前没有独立账号和多租户鉴权。</p></div>
+    </details>
+  </main>
+</body>
+</html>

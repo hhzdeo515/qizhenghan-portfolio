@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>首页 · 齐正涵</title><link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/vendor/lucide.js" defer></script><script src="assets/site.js" defer></script>
+</head>
+<body data-page="home">
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow flex items-center gap-3"><span class="status-dot"></span>PERSONAL PORTFOLIO / 2026</div>
+        <h1>齐正涵<span class="accent-dot">.</span><br><span class="hero-subheading">让 AI 走进<br><span class="hero-outline">真实世界。</span></span></h1>
+        <p class="hero-intro"><strong>AI 产品经理 · 智能硬件方向</strong><br>探索 AI Native、多模态交互与 Agent 工作流。<br>从人的需求出发，把想法变成可体验的产品。</p>
+        <div class="flex flex-wrap items-center gap-4 mt-8">
+          <a class="button button-primary" href="#work">查看我的作品<i data-lucide="arrow-down-right" aria-hidden="true"></i></a>
+          <a class="text-link" href="index.html#profile" data-navigate="profile">关于我<i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="hero-signature mono">HUMAN INTENT. MACHINE INTELLIGENCE.</div>
+      </div>
+      <div class="kernel-stage" aria-label="AI 核心交互演示">
+        <div class="stage-grid" aria-hidden="true"></div>
+        <div class="stage-corner corner-tl" aria-hidden="true"></div><div class="stage-corner corner-tr" aria-hidden="true"></div><div class="stage-corner corner-bl" aria-hidden="true"></div><div class="stage-corner corner-br" aria-hidden="true"></div>
+        <div class="stage-label mono"><span>INTELLIGENCE CORE</span><span>MODEL / QZ–01</span></div>
+        <div class="orbital-system" id="kernel" aria-hidden="true">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+          <div class="core-sphere"><div class="core-latitude"></div><div class="core-longitude"></div><div class="core-signal"></div><div class="core-specular"></div></div>
+          <span class="orbit-point point-a"></span><span class="orbit-point point-b"></span><span class="orbit-point point-c"></span>
+        </div>
+        <div class="node-label node-vision mono"><span class="node-icon"><i data-lucide="scan-eye" aria-hidden="true"></i></span>VISION<span>感知</span></div>
+        <div class="node-label node-think mono"><span class="node-icon"><i data-lucide="workflow" aria-hidden="true"></i></span>REASON<span>理解</span></div>
+        <div class="node-label node-action mono"><span class="node-icon"><i data-lucide="zap" aria-hidden="true"></i></span>ACTION<span>行动</span></div>
+        <div class="kernel-console">
+          <div><span class="mono console-eyebrow">INTERACTIVE DEMO</span><p id="kernel-status" role="status" aria-live="polite">等待你的意图<span class="blink-cursor">_</span></p></div>
+          <button id="kernel-toggle" class="kernel-button" type="button" aria-pressed="false" aria-label="启动 AI 核心交互演示"><i data-lucide="power" aria-hidden="true"></i><span>启动核心</span></button>
+        </div>
+        <div class="stage-footnote mono">A VISUAL EXPLORATION OF AI NATIVE</div>
+      </div>
+    </section>
+    <div class="discipline-strip"><div class="container flex flex-wrap items-center justify-between gap-5"><span class="mono muted">BUILDING AT THE INTERSECTION OF</span><span>AI Native</span><span>智能硬件</span><span>多模态交互</span><span>Agent 工作流</span><i data-lucide="asterisk" class="strip-star" aria-hidden="true"></i></div></div>
+    <section id="work" class="container section-pad work-section">
+      <div class="section-topline"><p class="eyebrow">01 / SELECTED WORK</p><span class="mono muted">从想法，到真实界面</span></div>
+      <div class="work-heading"><h2 class="section-heading">让产品说话<span class="accent-dot">.</span></h2><p class="body-copy">三个方向，一种坚持：<br>让 AI 在具体场景里，产生具体价值。</p></div>
+      <div class="work-grid">
+        <article class="work-card work-card-glasses">
+          <a class="project-image" href="index.html#ai-glasses" data-navigate="ai-glasses" aria-label="查看 AI 眼镜智能助手项目"><img src="assets/images/ai-glasses.png" alt="AI 眼镜智能助手的实际浏览器交互界面" width="1440" height="900" loading="lazy"><span class="image-label mono">HARDWARE × MULTIMODAL</span><span class="image-arrow"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span></a>
+          <div class="project-caption"><div class="flex items-center justify-between gap-3"><h3>AI 眼镜智能助手</h3><span class="mono muted">01</span></div><p>为小屏与有限操作，设计多模态 AI 体验。</p><div class="flex items-center justify-between gap-4 mt-5"><div class="flex flex-wrap gap-2"><span class="tag">智能硬件</span><span class="tag">LangGraph</span></div><a class="text-link" href="index.html#ai-glasses" data-navigate="ai-glasses">查看项目<i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div></div>
+        </article>
+        <article class="work-card work-card-huipi">
+          <a class="project-image" href="index.html#aihuipi" data-navigate="aihuipi" aria-label="查看 AI 慧批项目"><img src="assets/images/aihuipi-campus.jpg" alt="AI 慧批真实校园首页，教师与学生身份入口" width="1280" height="720" loading="lazy"><span class="image-label mono">EDUCATION × AI NATIVE</span><span class="image-arrow"><i data-lucide="arrow-up-right" aria-hidden="true"></i></span></a>
+          <div class="project-caption"><div class="flex items-center justify-between gap-3"><h3>AI 慧批</h3><span class="mono muted">03</span></div><p>让每一份作业，都有清晰反馈。</p><div class="flex items-center justify-between gap-4 mt-5"><div class="flex flex-wrap gap-2"><span class="tag">教育 AI</span><span class="tag">人机协同</span></div><a class="text-link" href="index.html#aihuipi" data-navigate="aihuipi">查看项目<i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div></div>
+        </article>
+        <article class="work-card work-card-review">
+          <a class="review-thumbnail" href="index.html#ad-review" data-navigate="ad-review" aria-label="查看广宣审核 Agent 项目"><img src="assets/images/ad-review.png" alt="广宣审核 Agent 的实际审核工作台界面" width="1440" height="900" loading="lazy"></a>
+          <div class="review-card-copy"><p class="eyebrow">02 / AGENT WORKFLOW</p><h3>广宣审核 Agent</h3><p>让风险发现、人工判断和整改过程可追溯。</p><div class="flex flex-wrap gap-2 mt-4"><span class="tag">证据定位</span><span class="tag">RAG</span><span class="tag">版本复审</span></div></div>
+          <a class="round-link" href="index.html#ad-review" data-navigate="ad-review" aria-label="查看广宣审核 Agent 案例"><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+        </article>
+      </div>
+      <div class="work-foot mono"><span>DESIGNED WITH INTENT. BUILT TO BE EXPERIENCED.</span><a href="https://github.com/hhzdeo515" target="_blank" rel="noopener noreferrer">更多代码探索<i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div>
+    </section>
+  </main>
+</body>
+</html>

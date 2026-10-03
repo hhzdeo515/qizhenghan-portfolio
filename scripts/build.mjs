@@ -1,0 +1,14 @@
+import { mkdir, copyFile, cp, readFile, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+const root = process.cwd();
+const dist = path.join(root, 'dist');
+await mkdir(path.join(root, 'assets/vendor'), { recursive: true });
+await copyFile(path.join(root, 'node_modules/lucide/dist/umd/lucide.min.js'), path.join(root, 'assets/vendor/lucide.js'));
+await mkdir(dist, { recursive: true });
+for (const file of ['index.html', 'home.html', 'profile.html']) await copyFile(path.join(root, file), path.join(dist, file));
+for (const dir of ['projects', 'assets']) await cp(path.join(root, dir), path.join(dist, dir), { recursive: true, filter: source => !source.endsWith('input.css') });
+await writeFile(path.join(dist, 'robots.txt'), 'User-agent: *\nAllow: /\n');
+const license = await readFile(path.join(root, 'node_modules/lucide/LICENSE'), 'utf8');
+await writeFile(path.join(root, 'assets/vendor/LICENSE-lucide.txt'), license);
+await writeFile(path.join(dist, 'assets/vendor/LICENSE-lucide.txt'), license);
+console.log('Static site built in dist/. Only website files are included.');

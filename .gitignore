@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.vercel/
+.env*
+!.env.example
+research/
+tools/
+docs/research/
+docs/design-references/
+docs/design/AI慧批-网站视觉设计.spec.md
+docs/design/prompt-landing.md
+docs/qa/screenshots/
+*.log
